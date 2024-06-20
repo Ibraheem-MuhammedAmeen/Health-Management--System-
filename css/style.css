@@ -1,0 +1,317 @@
+/* The body of the page */
+.body {
+  /* background-color: white; */
+  background-image: url('../images/bg.svg');
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-card-body {
+  padding: 20px;
+}
+
+.login-card-footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.w-55 {
+  width: 100%;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+nav {
+  background-color: #cad7ec;
+}
+.card {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  max-height: 200px;
+}
+.btn1{
+  background-color: #cad7ec !important;
+  color: white !important;
+}
+
+.background-section {
+  position: relative;
+  background-image: url('../images/bermix-studio-ODM_VsTM2QQ-unsplash.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  padding-left: 20px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+.mx-6{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+        /* Default styling for the link */
+        .underline-hover {
+          position: relative; /* Enables relative positioning of children */
+          display: inline-block; /* Allows for height styling */
+          text-decoration: none; /* Removes the default underline */
+          color: black;
+          overflow: hidden; /* Ensures the pseudo-element doesn't leak out */
+      }
+
+      /* Styling for the slide-in underline */
+      .underline-hover::after {
+          content: ''; /* Content for the pseudo-element */
+          position: absolute; /* Absolute positioning */
+          bottom: 0; /* Position at the bottom of the text */
+          left: 0; /* Start from the left side */
+          width: 0; /* Initial width, no underline */
+          height: 2px; /* Thickness of the underline */
+          background-color: black; /* Color of the underline */
+          transition: width 0.3s; /* Transition for the width */
+      }
+
+      /* Change the width of the underline to 100% on hover */
+      .underline-hover:hover::after {
+          width: 100%; /* Makes the underline cover full width of text on hover */
+      }
+      /* Lightblue back */
+      .btn-lightblue{
+        background-color: #cad7ec;
+        color:white;
+      }
+
+      footer{
+        background-color: #404c64;
+        color: white;
+      }
+      hr.thick-hr {
+        height: 4px; /* Adjust this value to control thickness */
+        background-color: white; /* Color of the horizontal line */
+        border: none; /* Remove default border */
+        margin: 20px 0; /* Add some spacing above and below */
+    }
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px; /* Apply a rounded border radius */
+  }
+
+  .image-container img {
+      width: 100%; /* Ensure the image covers the entire container */
+      height: auto;
+      display: block;
+  }
+
+  .centered-text {
+      position: absolute;
+      top: 50%; /* Move the text down by 50% of the container's height */
+      left: 50%; /* Move the text horizontally by 50% of the container's width */
+      transform: translate(-50%, -50%); /* Center the text precisely */
+      color: white;
+      text-align: center;
+      z-index: 1; /* Ensure the text is above the image */
+  }
+
+  .button-container {
+      position: absolute;
+      bottom: 10px; /* Position the button at the bottom */
+      right: 10px; /* Position the button on the right */
+      z-index: 1; /* Ensure the button is above the image */
+  }
+/* Styling for the contact card */
+.contact-card {
+  max-width:700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-pic {
+    width: 200px;
+    max-height: 200px;
+    display: inline-block;
+}
+
+.file-upload {
+    display: none;
+}
+.circle {
+    border-radius: 100% !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 72px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.p-image {
+  position: absolute;
+  top: 167px;
+  right: 30px;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+#input-container {
+  margin-bottom: 20px;
+}
+
+#name-input,
+#email-input,
+#date-input,
+#hospital-input,
+#update-hospital-input,
+#update-name-input,
+#update-date-input,
+#update-email-input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#name-input:focus,
+#email-input:focus,
+#date-input:focus,
+#hospital-input:focus,
+#update-date-input,
+#update-name-input:focus,
+#update-email-input:focus,
+#update-hospital-input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #cad7ec;
+  color: white;
+}
+
+#update-container {
+  display: none;
+  margin-top: 20px;
+}
+
+#update-btn {
+  background-color: #2196F3;
+}
+
+#cancel-btn {
+  background-color: #f44336;
+}
+
+.edit-btn{
+  background-color: #ffc107;
+}
+
+.delete-btn{
+  background-color: #dc3545;
+  margin-left:10px;
+}

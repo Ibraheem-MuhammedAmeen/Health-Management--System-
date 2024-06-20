@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Health Assistant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/health-bold.svg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body onload="profileMessage()">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/health-bold.svg" alt="" width="30" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="margin-right: 3.8rem;" id="navbarNav">
+            <ul class="navbar-nav ml-auto mx-6">
+                <a class="nav-link" href="Appointments.html">
+                    Appointments
+                </a>
+                <a class="nav-link" href="medicine.html">
+                    Medicine Dosages
+                </a>
+                <a class="nav-link" href="HealthVitals.html">
+                    Health Vitals
+                </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown4" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Settings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown4">
+                        <a class="dropdown-item" href="Profile.html" style="color: #cad7ec; text-decoration: underline #404c64;">Change Profile</a>
+                        <a class="dropdown-item" href="index.html">Log out</a>
+                        <a class="dropdown-item" href="help.html">Help</a>
+                        <a class="dropdown-item" href="form2.html">Change Password</a>
+                        <a class="dropdown-item" href="View appointments.html">View Appointments</a>
+                    </div>
+                </li>
+        </div>
+        <li style="list-style-type: none; text-decoration: underline white;"><span id="usernameDisplay"
+                class="mx-5 my-2 text-white" style="color: black; font-family: cursive;"></span></li>
+    </nav>
+    <section>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    Profile Picture
+                                </div>
+                                <div class="card-body text-center">
+                                    <div id="profilePictureContainer">
+                                        <img id="profilePicture" src="images/blank-profile-picture-973460_1280.png"
+                                            alt="Profile Picture" class="rounded-circle"
+                                            style="width: 150px; height: 150px; object-fit: cover;">
+                                    </div>
+                                    <form id="profilePictureForm" class="mt-3">
+                                        <label for="profilePictureInput" class="btn"
+                                            style="background-color: #cad7ec; color: white;">Upload Image</label>
+                                        <input type="file" id="profilePictureInput" accept="image/*"
+                                            style="display: none;">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 my-5">
+                <!-- Form -->
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5>My profile</h5>
+                        <hr>
+                        <form id="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div>
+                                    <label for="displayedName">Full Name</label>
+                                    <input type="text" class="form-control" id="displayedName">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <label for="displayedName2">Age</label>
+                                    <input type="text" class="form-control" id="displayedName2">
+                                </div>
+                            </div>
+                        </div>
+                        <label for="gender">Gender</label>
+                        <input type="text" class="form-control" id="gender">
+                        <label for="displayedName1">Email</label>
+                        <input type="email" class="form-control" id="displayedName1" disabled>
+                        <label for="address">Address</label>
+                        <input type="text" id="displayedName3" class="form-control">
+                        <button id="saveButton" class="btn" style="background-color: #cad7ec; color: white;">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Start of Footer -->
+ <footer class="mt-5 py-5">
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-md-4 mt-3">
+                <h5>PERSONAL HEALTH ASSISTANT</h5>
+                <p>Health is one of the most important factors in today's era and should be our first priority. <a href="Login.html" class="text-white">Read more</a></p>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h5>Quick Links</h5>
+                <div class="d-flex flex-column">
+                    <a href="#" class="text-decoration-none text-white">Appointments</a>
+                    <a href="#" class="text-decoration-none text-white">Dosage</a>
+                    <a href="#" class="text-decoration-none text-white">Vitals</a>
+                    <a href="#" class="text-decoration-none text-white">History</a>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h5>Social Media</h5>
+                <div class="d-flex flex-column">
+                   <a href="#" class="text-decoration-none text-white">Facebook</a>
+                    <a href="#" class="text-decoration-none text-white">Twitter</a>
+                    <a href="#" class="text-decoration-none text-white">Instagram</a>
+                    <a href="#" class="text-decoration-none text-white">Linkedn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="thick-hr">
+    <p class="text-center text-white">&copy;Personal Health Assistant 2023</p>
+</footer>
+<!-- End of footer -->
+    <script>
+        // Get data from URL query parameters
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const name = urlSearchParams.get("name");
+        const r_email = urlSearchParams.get("r_email");
+        const age = urlSearchParams.get("age");
+        const Address = urlSearchParams.get("Address");
+
+        // Get references to input fields
+        const displayedNameInput = document.getElementById("displayedName");
+        const displayedNameInput1 = document.getElementById("displayedName1");
+        const displayedName2 = document.getElementById("displayedName2");
+        const displayedName3 = document.getElementById("displayedName3");
+        // Populate input fields with data
+        displayedNameInput.value = name;
+        displayedNameInput1.value = r_email;
+        displayedName2.value = age;
+        displayedName3.value = Address;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const profilePictureForm = document.getElementById("profilePictureForm");
+            const profilePictureInput = document.getElementById("profilePictureInput");
+            const profilePicture = document.getElementById("profilePicture");
+            const profilePictureContainer = document.getElementById("profilePictureContainer");
+
+            // Load saved profile picture URL from local storage
+            const savedProfilePictureUrl = localStorage.getItem("profilePictureUrl");
+            if (savedProfilePictureUrl) {
+                profilePicture.src = savedProfilePictureUrl;
+            }
+
+            profilePictureInput.addEventListener("change", function (event) {
+                const selectedFile = event.target.files[0];
+
+                if (selectedFile) {
+                    const imageUrl = URL.createObjectURL(selectedFile);
+                    profilePicture.src = imageUrl;
+
+                    // Save profile picture URL to local storage
+                    localStorage.setItem("profilePictureUrl", imageUrl);
+                }
+            });
+
+            profilePictureForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                profilePictureInput.click(); // Trigger input file selection
+            });
+        });
+
+        // Retrieve and display username from sessionStorage
+        const storedUsername = sessionStorage.getItem("username");
+        const usernameDisplay = document.getElementById("usernameDisplay");
+
+        if (storedUsername) {
+            usernameDisplay.textContent = storedUsername;
+        } else {
+            usernameDisplay.textContent = "Guest"; // Default if no username is stored
+        }
+    </script>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

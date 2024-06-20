@@ -1,0 +1,21 @@
+.bg-img{
+    background-image: url(../images/fish.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-indigo{
+    background-color:#022E51;
+  }
+  .bg-color{
+    color: #B74803;
+  }
+  .bg-color:hover{
+    color: #CC6D3D; 
+  }
+  .link{
+    text-decoration: none;
+  }
+  .pointer{
+    cursor: pointer;
+  }

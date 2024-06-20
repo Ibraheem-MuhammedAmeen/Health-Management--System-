@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!--getting the bootstrap classes-->
+    <link rel="stylesheet" href="css/style.css"> <!--The page styling.. External CSS-->
+    <link rel="shortcut icon" href="images/health-bold.svg" type="image/x-icon"> <!--The page icon-->
+</head>
+<body>
+
+<div class="container login-container rounded-5"> <!--The Form Container-->
+    <div class="card login-card">
+        <div class="card-header">
+            <h3 style="font-family: 'Times New Roman', Times, serif;">Register</h3>
+        </div>
+        <div class="card-body login-card-body">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Email Id:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Full Name:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Address:</label>
+                    <input type="password" class="form-control" id="Address" name="Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Age:</label>
+                    <input type="password" class="form-control" id="Address" name="Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Gender:</label> <br>
+                    <label class="radio-container">
+                        <input type="radio" name="gender" value="male">
+                        <span class="radio-button"></span> Male
+                      </label>
+                      
+                      <label class="radio-container">
+                        <input type="radio" name="gender" value="female">
+                        <span class="radio-button"></span> Female
+                      </label>
+                      
+                      <label class="radio-container">
+                        <input type="radio" name="gender" value="other">
+                        <span class="radio-button"></span> Other
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block" onclick="getCredentials()">Login</button>
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

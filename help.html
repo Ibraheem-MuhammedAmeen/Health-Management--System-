@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Health Assistant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/health-bold.svg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/health-bold.svg" alt="" width="30" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="margin-right: 3.8rem;" id="navbarNav">
+            <ul class="navbar-nav ml-auto mx-6">
+                    <a class="nav-link" href="#">
+                        Appointments
+                    </a>
+                    <a class="nav-link" href="#">
+                        Medicine Dosages
+                    </a>
+                    <a class="nav-link" href="#">
+                        Health Vitals
+                    </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown4" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Settings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown4">
+                        <a class="dropdown-item" href="Profile.html">Change Profile</a>
+                        <a class="dropdown-item" href="index.html">Log out</a>
+                        <a class="dropdown-item" href="help.html" style="color: #cad7ec; text-decoration: underline #404c64;">Help</a>
+                        <a class="dropdown-item" href="View appointments.html">View Appointments</a>
+                    </div>
+                </li>
+        </div>
+        <li style="list-style-type: none; text-decoration: underline white;"><span id="usernameDisplay"
+                class="mx-5 my-2 text-white" style="color: black; font-family: cursive;"></span></li>
+    </nav>
+
+    <section class="container">
+        <h5 style="font-weight: bold;" class="my-5">User Guidelines</h5>
+        <div class="container mt-5">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-plus"></i>  1. Purpose of the Application:
+                            </button>
+                        </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            The Personal Health Assistant is designed to provide health-related information, recommendations, and assistance. It is not a substitute for professional medical advice. Always consult a healthcare professional for any medical concerns or emergencies.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fas fa-plus"></i> 2. Registration and Privacy:
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            When using the application, you may be required to provide personal information. We take your privacy seriously and have implemented security measures to protect your data. Review our Privacy Policy to understand how your information is collected, used, and stored.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fas fa-plus"></i> 3. Accuracy of information:
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            While the application strives to provide accurate and up-to-date information, it's important to verify any health-related advice or recommendations with a qualified healthcare provider.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fas fa-plus"></i> 4. User Responsibility:
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            You are responsible for the information you provide in the application. Make sure to provide accurate and honest details about your health and symptoms for the best recommendations.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <i class="fas fa-plus"></i> 5. Consult a Healthcare Professional:
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                            The application can offer general health advice, but it is not a substitute for professional medical diagnosis or treatment. If you have specific health concerns, consult a qualified healthcare provider.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <i class="fas fa-plus"></i> 6. Emergency Situations:
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            In case of a medical emergency, dial emergency services or seek immediate medical attention. The application is not equipped to handle emergencies.
+                        </div>
+                    </div>
+                </div>
+                <!-- more sections here -->
+            </div>
+        </div>
+        <blockquote style="font-weight: bold; font-family: cursive;">"We hope this information was helpful"</blockquote>
+    </section>
+
+     <!-- Start of Footer -->
+ <footer class="mt-5 py-5">
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-md-4 mt-3">
+                <h5>PERSONAL HEALTH ASSISTANT</h5>
+                <p>Health is one of the most important factors in today's era and should be our first priority. <a href="Login.html" class="text-white">Read more</a></p>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h5>Quick Links</h5>
+                <div class="d-flex flex-column">
+                    <a href="#" class="text-decoration-none text-white">Appointments</a>
+                    <a href="#" class="text-decoration-none text-white">Dosage</a>
+                    <a href="#" class="text-decoration-none text-white">Vitals</a>
+                    <a href="#" class="text-decoration-none text-white">History</a>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h5>Social Media</h5>
+                <div class="d-flex flex-column">
+                   <a href="#" class="text-decoration-none text-white">Facebook</a>
+                    <a href="#" class="text-decoration-none text-white">Twitter</a>
+                    <a href="#" class="text-decoration-none text-white">Instagram</a>
+                    <a href="#" class="text-decoration-none text-white">Linkedn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="thick-hr">
+    <p class="text-center text-white">&copy;Personal Health Assistant 2023</p>
+</footer>
+<!-- End of footer -->
+    <script>
+        // Retrieve and display username from sessionStorage
+        const storedUsername = sessionStorage.getItem("username");
+        const usernameDisplay = document.getElementById("usernameDisplay");
+
+        if (storedUsername) {
+            usernameDisplay.textContent = storedUsername;
+        } else {
+            usernameDisplay.textContent = "Guest"; // Default if no username is stored
+        }
+    </script>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>

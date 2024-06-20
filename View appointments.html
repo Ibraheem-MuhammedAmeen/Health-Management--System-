@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Health Assistant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/health-bold.svg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<bod>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/health-bold.svg" alt="" width="30" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="margin-right: 3.8rem;" id="navbarNav">
+            <ul class="navbar-nav ml-auto mx-6">
+                <a class="nav-link text-white" style="font-weight: bold;" href="Appointments.html">
+                    Appointments
+                </a>
+                <a class="nav-link" href="medicine.html">
+                    Medicine Dosages
+                </a>
+                <a class="nav-link" href="HealthVitals.html">
+                    Health Vitals
+                </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown4" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Settings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown4">
+                        <a class="dropdown-item" href="Profile.html">Change Profile</a>
+                        <a class="dropdown-item" href="index.html">Log out</a>
+                        <a class="dropdown-item" href="form2.html">Change Password</a>
+                        <a class="dropdown-item" href="help.html" >Help</a>
+                        <a class="dropdown-item" href="View appointments.html" style="color: #cad7ec; text-decoration: underline black;">View Appointments</a>
+                    </div>
+                </li>
+        </div>
+        <li style="list-style-type: none; text-decoration: underline white;"><span id="usernameDisplay"
+                class="mx-5 my-2 text-white" style="color: black; font-family: cursive;"></span></li>
+    </nav>
+    <section class="container">
+        <table class="my-3">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Birthday</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Department</th>
+                <th>Procedure</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+          <div id="update-container">
+            <input type="text" id="update-fname-input">
+            <input type="text" id="update-lname-input">
+            <input type="text" id="update-gender-input">
+            <input type="text" id="update-birthday-input">
+            <input type="text" id="update-email-input">
+            <input type="text" id="update-phone-input">
+            <input type="text" id="update-address-input">
+            <input type="text" id="update-city-input">
+            <input type="text" id="update-state-input">
+            <input type="text" id="update-department-input">
+            <input type="text" id="update-procedure-input">
+            <input type="text" id="update-date-input">
+            <button id="update-btn">Update</button>
+            <button id="cancel-btn">Cancel</button>
+          </div>
+    </section>
+    <footer class="mt-5 py-5">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-md-4 mt-3">
+                    <h5>PERSONAL HEALTH ASSISTANT</h5>
+                    <p>Health is one of the most important factors in today's era and should be our first priority. <a href="Login.html" class="text-white">Read more</a></p>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <h5>Quick Links</h5>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-decoration-none text-white">Appointments</a>
+                        <a href="#" class="text-decoration-none text-white">Dosage</a>
+                        <a href="#" class="text-decoration-none text-white">Vitals</a>
+                        <a href="#" class="text-decoration-none text-white">History</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <h5>Social Media</h5>
+                    <div class="d-flex flex-column">
+                       <a href="#" class="text-decoration-none text-white">Facebook</a>
+                        <a href="#" class="text-decoration-none text-white">Twitter</a>
+                        <a href="#" class="text-decoration-none text-white">Instagram</a>
+                        <a href="#" class="text-decoration-none text-white">Linkedn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="thick-hr">
+        <p class="text-center text-white">&copy;Personal Health Assistant 2023</p>
+    </footer>
+    <!-- End of footer -->
+    <script>
+        // Retrieve and display username from sessionStorage
+        const storedUsername = sessionStorage.getItem("username");
+        const usernameDisplay = document.getElementById("usernameDisplay");
+
+        if (storedUsername) {
+            usernameDisplay.textContent = storedUsername;
+        } else {
+            usernameDisplay.textContent = "Guest"; // Default if no username is stored
+        }
+    </script>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
